@@ -1,0 +1,66 @@
+.navbar {
+    background-color: #eeeeee; /* Fondo gris claro */
+    padding: 0 2rem; /* Padding horizontal */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px; /* Altura fija de la navbar */
+    border-bottom: 2px solid #1d1616; /* Línea negra debajo de la navbar */
+    position: fixed; /* Fijar la navbar en la parte superior */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Asegurarse de que la navbar esté por encima de otros elementos */
+    box-sizing: border-box; /* Incluir padding y border en el ancho y alto */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    color: #d84040; /* Logo rojo */
+    padding: 0.5rem;
+    max-height: 80px; /* Limitar la altura del logo */
+    cursor: pointer;
+    transition: transform 1s ease; /* Transición suave para la transformación */
+}
+
+.logo img.rotate {
+    transform: rotate(360deg); /* Girar el logo */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    color: #1d1616;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+ul li a:hover {
+    background-color: #d84040;
+    transition: background-color 0.3s ease;
+}
+
+.cart-widget-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

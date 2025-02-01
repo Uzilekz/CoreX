@@ -1,0 +1,18 @@
+.item-list-container {
+    background-color: #d84040;
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.item-list-container h2 {
+    color: #1d1616;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    word-wrap: break-word;
+}
