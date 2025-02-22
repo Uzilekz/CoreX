@@ -44,6 +44,11 @@ ul {
     padding: 0;
 }
 
+ul li {
+    display: flex;
+    align-items: center;
+}
+
 ul li a {
     color: #1d1616;
     text-decoration: none;
@@ -57,6 +62,11 @@ ul li a {
 ul li a:hover {
     background-color: #d84040;
     transition: background-color 0.3s ease;
+}
+
+ul li a.active {
+    background-color: #2d8cf0; /* Color de fondo para el enlace activo */
+    color: white; /* Color del texto para el enlace activo */
 }
 
 .cart-widget-container {

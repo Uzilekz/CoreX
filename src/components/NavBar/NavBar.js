@@ -1,5 +1,5 @@
-/* filepath: /C:/Users/Gerardo P.A/Desktop/Coding/CODERHOUSE/CoreX/src/components/NavBar/NavBar.js */
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 import CartWidget from "../CartWidget/CartWidget";
 import logo from "../../assets/images/logo.png";
@@ -17,18 +17,30 @@ const NavBar = () => {
     return (
         <nav className="navbar">
             <div className="logo" onClick={handleLogoClick}>
-                <img src={logo} alt="CoreX" />
+                <NavLink to="/" exact>
+                    <img src={logo} alt="CoreX" />
+                </NavLink>
             </div>
             <div className="nav-links">
                 <ul>
                     <li>
-                        <a href="#home">Inicio</a>
+                        <NavLink
+                            to="/"
+                            exact
+                            activeClassName="active"
+                            className="nav-link"
+                        >
+                            Inicio
+                        </NavLink>
                     </li>
                     <li>
-                        <a href="#products">Productos</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contacto</a>
+                        <NavLink
+                            to="/category/productos"
+                            activeClassName="active"
+                            className="nav-link"
+                        >
+                            Productos
+                        </NavLink>
                     </li>
                 </ul>
             </div>

@@ -1,0 +1,12 @@
+.not-found {
+    text-align: center;
+    padding: 2rem;
+}
+
+.not-found h2 {
+    color: #d84040;
+}
+
+.not-found p {
+    color: #1d1616;
+}

@@ -28,6 +28,18 @@
     color: #61dafb;
 }
 
+.welcome-title {
+    font-size: 3rem; /* Tamaño de fuente más grande */
+    color: white; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+    margin: 2rem 0; /* Espacio superior e inferior */
+    background-color: #87ceeb; /* Fondo azul cielo */
+    padding: 1rem; /* Padding alrededor del texto */
+    border-radius: 10px; /* Bordes redondeados */
+    font-family: "Arial", sans-serif; /* Fuente personalizada */
+    text-align: center; /* Centrar el texto */
+}
+
 @keyframes App-logo-spin {
     from {
         transform: rotate(0deg);
